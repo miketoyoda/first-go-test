@@ -14,7 +14,5 @@ result_vector = [sum_of_squares_positive_values(vector) for vector in input_test
 def encode_input_vector(input_vector):
     return ' '.join(map(str, input_vector))
 
-print(result_vector)
-
 # output to console, copy-paste to unit test file test param vector
 [print(f'{{\"{encode_input_vector(k)}\", {v}}},') for k, v in zip(input_test_vectors, result_vector)]
